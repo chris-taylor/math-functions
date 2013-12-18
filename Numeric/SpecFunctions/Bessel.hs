@@ -19,6 +19,29 @@ j0 = undefined
 j1 :: Double -> Double
 j1 = undefined
 
+besselj :: Int -> Double -> Double
+besselj n x
+  | n < 0     = (if odd n then -1 else 1) * worker (abs n) x
+  | otherwise = worker n x
+ where
+  worker n x = undefined
+
+y0 :: Double -> Double
+y0 = undefined
+
+y1 :: Double -> Double
+y1 = undefined
+
+bessely :: Int -> Double -> Double
+bessely n x
+  | n < 0     = (if odd n then -1 else 1) * worker (abs n) x
+  | otherwise = worker n x
+ where
+  worker n x = undefined
+
+
+
+
 -- References:
 
 -- Fast and Accurate Bessel Function Computation
